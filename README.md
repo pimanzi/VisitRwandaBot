@@ -70,7 +70,7 @@ The project uses a curated **Rwanda Tourism Q&A Dataset** containing:
 ### **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/yourusername/VisitRwandaBot.git
+git clone https://github.com/pimanzi/VisitRwandaBot.git
 cd VisitRwandaBot
 ```
 

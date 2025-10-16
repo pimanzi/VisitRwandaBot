@@ -18,7 +18,7 @@ This project implements a domain-specific question-answering system for Rwanda t
 - More conversational and flexible response generation
 - Better for open-ended tourism queries
 
-## 📊 Dataset
+##  Dataset
 
 The project uses a curated **Rwanda Tourism Q&A Dataset** containing:
 
@@ -32,7 +32,7 @@ The project uses a curated **Rwanda Tourism Q&A Dataset** containing:
 - **Data Sources**: Official Rwanda tourism documentation, travel guides, and expert knowledge
 - **Quality Assurance**: Manual verification and span alignment for extractive QA training
 
-## 🧪 Experiment Results
+##  Experiment Results
 
 ### **Extractive QA Models (DistilBERT-based)**
 
@@ -131,7 +131,7 @@ VisitRwandaBot/
 └── README.md                    # Project documentation
 ```
 
-## 🎯 Features
+## Features
 
 ### **Core Capabilities**
 
@@ -168,7 +168,7 @@ VisitRwandaBot/
 - "What are traditional Rwandan dances?"
 - "Tell me about Rwandan traditional food"
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -176,17 +176,17 @@ VisitRwandaBot/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Rwanda Development Board** for tourism information
 - **Hugging Face** for transformer models and datasets library
 - **Streamlit** for the web interface framework
 
-## 📞 Contact
+##  Contact
 
 For questions, suggestions, or collaboration opportunities:
 

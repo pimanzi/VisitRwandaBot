@@ -109,7 +109,7 @@ streamlit run app.py
 
 The application will be available at `http://localhost:8501`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 VisitRwandaBot/
@@ -135,24 +135,24 @@ VisitRwandaBot/
 
 ### **Core Capabilities**
 
-- ✅ **Domain-Specific Responses**: Specialized knowledge about Rwanda tourism
-- ✅ **Multi-Modal Information**: National parks, cultural heritage, travel planning
-- ✅ **Context-Aware Retrieval**: Hybrid BM25 + semantic search for relevant information
-- ✅ **Non-Tourism Filtering**: Politely handles off-topic questions
-- ✅ **High Accuracy**: 94.5% exact match accuracy on tourism questions
+- **Domain-Specific Responses**: Specialized knowledge about Rwanda tourism
+- **Multi-Modal Information**: National parks, cultural heritage, travel planning
+- **Context-Aware Retrieval**: Hybrid BM25 + semantic search for relevant information
+- **Non-Tourism Filtering**: Politely handles off-topic questions
+- **High Accuracy**: 94.5% exact match accuracy on tourism questions
 
 ### **Web Interface**
 
-- ✅ **Clean, Responsive Design**: Rwanda-themed green and white interface
-- ✅ **Example Questions**: Quick-start questions for common queries
-- ✅ **Real-Time Responses**: Instant answers powered by trained modelsn
+- **Clean, Responsive Design**: Rwanda-themed green and white interface
+- **Example Questions**: Quick-start questions for common queries
+- **Real-Time Responses**: Instant answers powered by trained modelsn
 
 ### **Technical Features**
 
-- ✅ **Transformer-Based Models**: DistilBERT and Flan-T5 architectures
-- ✅ **Efficient Inference**: Optimized for fast response times
-- ✅ **Scalable Architecture**: Easy to extend with new tourism domains
-- ✅ **Production Ready**: Comprehensive error handling and logging
+- **Transformer-Based Models**: DistilBERT and Flan-T5 architectures
+- **Efficient Inference**: Optimized for fast response times
+- **Scalable Architecture**: Easy to extend with new tourism domains
+- **Production Ready**: Comprehensive error handling and logging
 
 ## Usage Examples
 
@@ -191,7 +191,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For questions, suggestions, or collaboration opportunities:
 
 - **Email**: p.imanzi@alustudent.com
-- **GitHub**: [@yourusername](https://github.com/pimanzi)
+- **GitHub**: [@pimanzi](https://github.com/pimanzi)
 - **Project Link**: [https://github.com/pimanzi/VisitRwandaBot](https://github.com/pimanzi/VisitRwandaBot.git)
 
 ---

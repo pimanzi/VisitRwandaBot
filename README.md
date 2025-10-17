@@ -18,7 +18,7 @@ This project implements a domain-specific question-answering system for Rwanda t
 - More conversational and flexible response generation
 - Better for open-ended tourism queries
 
-##  Dataset
+## 📊 Dataset
 
 The project uses a curated **Rwanda Tourism Q&A Dataset** containing:
 
@@ -32,7 +32,26 @@ The project uses a curated **Rwanda Tourism Q&A Dataset** containing:
 - **Data Sources**: Official Rwanda tourism documentation, travel guides, and expert knowledge
 - **Quality Assurance**: Manual verification and span alignment for extractive QA training
 
-##  Experiment Results
+## 📱 Demo Screenshots
+
+The chatbot effectively handles different types of tourism queries and appropriately filters non-related questions:
+
+### **National Parks Queries**
+
+![National Parks Demo](images_demo/nationalParks.png)
+_Example of chatbot responding to questions about Rwanda's national parks, wildlife, and safari information._
+
+### **Cultural Heritage Queries**
+
+![Cultural Heritage Demo](images_demo/culturalHeritage.png)
+_Demonstration of responses to questions about Rwandan traditions, museums, ceremonies, and cultural sites._
+
+### **Non-Tourism Query Filtering**
+
+![Non-Related Query Demo](images_demo/Nonrelated.png)
+_Shows how the chatbot politely redirects non-tourism questions back to Rwanda tourism topics._
+
+## 🧪 Experiment Results
 
 ### **Extractive QA Models (DistilBERT-based)**
 
@@ -53,12 +72,24 @@ The project uses a curated **Rwanda Tourism Q&A Dataset** containing:
 | **Domain Relevance**   | 0.38  | Tourism-specific content accuracy       |
 | **Response Coherence** | 0.40  | Grammatical and contextual coherence    |
 
+### **Hyperparameters Used**
+
+| Experiment       | Learning Rate | Epochs | Weight Decay | Warmup Ratio | Early Stopping |
+| ---------------- | ------------- | ------ | ------------ | ------------ | -------------- |
+| **Conservative** | 2e-5          | 8      | 0.01         | 0.1          | eval_loss      |
+| **Balanced**     | 3e-5          | 10     | 0.01         | 0.1          | eval_loss      |
+| **Aggressive**   | 5e-5          | 12     | 0.005        | 0.05         | eval_loss      |
+
 ### **Key Findings**
 
 - **Conservative Extractive Model** achieved the best overall performance with 94.5% exact match accuracy
 - **Generative Model** provides more natural, conversational responses suitable for open-ended queries however it does have many repititions of words in the answer and also hallucianted too much.
 - **Hybrid retrieval system** significantly improved context relevance for extractive models
 - **Domain filtering** successfully identifies and handles non-tourism questions
+
+### **Experiment Conclusion**
+
+Our systematic comparison revealed that extractive question-answering significantly outperforms generative approaches for domain-specific tourism queries, primarily because extractive models draw answers directly from verified knowledge sources rather than generating potentially inaccurate content. The conservative training strategy with moderate learning rates (2e-5) and strong regularization (0.01 weight decay) proved most effective for our specialized Rwanda tourism dataset, preventing overfitting while maintaining high accuracy on domain-specific questions. While generative models offered more conversational responses, they suffered from hallucination issues (creating false information about Rwanda's attractions) and word repetition problems that compromised factual reliability - critical flaws for tourism information systems where accuracy is paramount. The extractive approach, combined with our hybrid BM25 + semantic context retrieval system, ensures tourists receive reliable and precise answers by grounding responses in authoritative tourism documentation, making it the superior choice for specialized domain applications.
 
 ## 🚀 Installation & Setup
 
@@ -168,7 +199,7 @@ VisitRwandaBot/
 - "What are traditional Rwandan dances?"
 - "Tell me about Rwandan traditional food"
 
-##  Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -176,17 +207,17 @@ VisitRwandaBot/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-##  License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-##  Acknowledgments
+## 🙏 Acknowledgments
 
 - **Rwanda Development Board** for tourism information
 - **Hugging Face** for transformer models and datasets library
 - **Streamlit** for the web interface framework
 
-##  Contact
+## 📞 Contact
 
 For questions, suggestions, or collaboration opportunities:
 

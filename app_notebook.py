@@ -110,7 +110,7 @@ def main():
         st.session_state.messages = []
         st.session_state.messages.append({
             "role": "assistant",
-            "content": "Hello! 👋 I'm your Rwanda Tourism guide using your trained conservative_FIXED model with proper context retrieval. Ask me about national parks, wildlife, cultural sites, or any tourism information!"
+            "content": "Hello! 👋 I'm your Rwanda Tourism guide . Ask me about national parks, wildlife, cultural sites, or any tourism information!"
         })
     
     # Example questions section - clean and simple
@@ -120,11 +120,11 @@ def main():
     
     examples = [
         "How many national parks are in Rwanda?",
-        "Where can I see mountain gorillas?", 
-        "What animals are in Akagera National Park?",
-        "What museums can I visit in Rwanda?",
-        "What is the best time to visit Rwanda?",
-        "What are traditional Rwandan ceremonial dances?"
+        "Where is Akagera national park situated?", 
+        "What museums are in Rwanda?",
+        "Are lions found in Akagera national park?",
+        "Where is Nyungwe national park?",
+        "What animals are in Akagera National Park?"
     ]
     
     for i, question in enumerate(examples):
